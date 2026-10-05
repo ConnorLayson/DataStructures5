@@ -9,15 +9,26 @@ Output: [5, 12, 0, 3, 5]
 """
 
 def running_total(values):
+    if len(values) == 0:
+        return "Error parsing: Empty list"
     total = 0
     total_list = []
     for value in values:
-        if value < 0:
-            total = 0
-        else:
-            total += value
-        total_list.append(total)
+        try:
+            if int(value) < 0:
+                total = 0
+            else:
+                total += int(value)
+            total_list.append(total)
+        except:
+            return "Error parsing: Non-number values"
     return total_list
 
 val_input = [5, 7, -1, 3, 2]
+print(running_total(val_input))
+
+val_input = []
+print(running_total(val_input))
+
+val_input = [5, 7, "Hello", 3, 2]
 print(running_total(val_input))

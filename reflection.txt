@@ -1,0 +1,11 @@
+I chose to simply iterate through the list and add that number to a total variable,
+which I reset if the number was less than zero. I thought that would be the simplest 
+thing to do under the time restrictions, as the code for it is simple and easy to 
+impliment.
+
+The time limit shaped my desition because when confronted with the timer, I instantly 
+went to the simplest method I could think of and could start making it with as little 
+time thinking on what to actually do as I possibly could. 
+
+The only trade-off I can think of is if I had unlimited time, I could have thought of a 
+method that could have been faster or with cleaner code.
